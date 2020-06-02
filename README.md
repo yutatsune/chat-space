@@ -4,10 +4,10 @@
 |------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
 ### Assosiation
 - has_many :comments
 - has_many :groups_users
+- has_many :groups
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -22,10 +22,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
 ### Assosiation
 - has_many :comments
 - has_many :groups_users
+- has_many :users
 
 ## commentsテーブル
 |Column|Type|Options|
