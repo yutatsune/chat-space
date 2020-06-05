@@ -1,0 +1,25 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__names
+      .chat-main__group-info__names__main test
+      %ul.chat-main__group-info__names__sub
+        Member：
+        %li.chat-main__group-info__names__sub__member yuta
+    = link_to "Edit", "#", class: "chat-main__group-info__edit"
+  .chat-main__message-list
+    %ul.chat-main__message-list__names
+      %li.chat-main__message-list__names__main yuta
+      %li.chat-main__message-list__names__date 2020/06/04(Thu) 12:00:00
+    .chat-main__message-list__text おはよう！
+    %ul.chat-main__message-list__names
+      %li.chat-main__message-list__names__main yuta
+      %li.chat-main__message-list__names__date 2020/06/04(Thu) 13:00:00
+    .chat-main__message-list__text いい天気！
+  .chat-main__message-form
+    .chat-main__message-form__contents
+      .chat-main__message-form__contents__texts
+        .chat-main__message-form__contents__texts__main type a message
+        %label{class: "chat-main__message-form__contents__texts__photo"}
+          = icon('fas', 'image', class: "chat-main__message-form__contents__texts__photo__icon")
+          %input{type: "file", class: "chat-main__message-form__contents__texts__photo__hidden"}
+      .chat-main__message-form__contents__send Send
