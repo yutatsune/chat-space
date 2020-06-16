@@ -8,7 +8,7 @@
         %li.chat-main__group-info__names__sub__member
         = @group.users.pluck(:name).join(", ")
     = link_to "Edit", edit_group_path(@group.id), class: "chat-main__group-info__edit"
-  .chat-main__message-list
+  .chat-main__message
     = render @messages
   .chat-main__message-form
     = form_with model: [@group, @message], html: {class: "chat-main__message-form__contents"}, local: true do |f|

@@ -29,33 +29,37 @@
       padding: 0px 20px;
     }
   }
-  &__message-list{
-    background-color: #fafafa;
+  &__message{
     height: calc(100vh - 100px - 90px);
-    width: calc(100vw - 300px);
-    padding: 35px 0px 0px 40px;
+    padding: 35px 40px 0px;
+    background-color: #fafafa;
     overflow: scroll;
-    &__names{
-      display: flex;
-      margin-bottom: 12px;
-      &__main{
-        color: #333333;
-        font-size: 16px;
-        margin-right: 5px;
+    &-list{
+      background-color: #fafafa;
+      width: calc(100vw - 300px);
+      margin-bottom: 30px;
+      &__names{
+        display: flex;
+        margin-bottom: 12px;
+        &__main{
+          color: #333333;
+          font-size: 16px;
+          margin-right: 5px;
+        }
+        &__date{
+          color: #999999;
+          font-size: 12px;
+        }
       }
-      &__date{
-        color: #999999;
-        font-size: 12px;
-      }
-    }
-    &__contents{
+      &__contents{
 
-    }
-      &__text{
-        color: #434a54;
-        font-size: 14px;
-        margin-bottom: 46px;
       }
+        &__text{
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 46px;
+      }
+    }
   }
   &__message-form{
     background-color: #d2d2d2;
